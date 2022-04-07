@@ -16,7 +16,7 @@ Exercise 2
 
 Newly trained model: 67% accuracy
 
-Fine tuning:
+Fine tuning: 62% accuracy
 
 Feature Extraction: 83% accuracy
 
