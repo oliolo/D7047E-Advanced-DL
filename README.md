@@ -21,6 +21,7 @@ Fine tuning:
 Feature Extraction: 83% accuracy
 
 Difference between Fine tuning & Feature extraction:
+
 Fine tuning: In the fine-tuning strategy all weights are changed when training on the new task except for the weights of the last layers for the original task.
 
 Feature Extraction: In the feature extraction strategy only the weights of the newly added last layers change during the training phase.
