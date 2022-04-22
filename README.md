@@ -36,6 +36,7 @@ Use pre-trained CNN on SVHN dataset: 77% accuracy
 Exercise 3
 
 Untrained network t-sne and then pca
+
 ![7ef483b4-967d-47cd-8067-ea70115647ba](https://user-images.githubusercontent.com/47854778/164675688-bd317899-c16c-4115-9f60-79e8c516f788.png)
 
 ![f2ba9bd9-8b08-4bdc-8bc1-e22b44af6b36](https://user-images.githubusercontent.com/47854778/164675721-4c7763d0-2161-414b-9c62-dc652846e9e8.png)
