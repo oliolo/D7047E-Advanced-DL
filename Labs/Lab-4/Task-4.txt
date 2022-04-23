@@ -1,0 +1,31 @@
+##Input: The
+Output:
+"The king and less made ride of thee,
+That show the edle to unless have does to make
+the Warwick's ear s"
+
+##Input: .
+Output: 
+".
+
+Second Citizen:
+On; gentle Lucio strike, the cause, where I should, letus dear,
+And indeed this be"
+
+##Input: which is
+Output:
+"which is or way; our promise to?
+
+YORK:
+Was not the mastiness to the duke it to his. What!
+
+RATCLIFF:
+He hat"
+
+##Input: blah blah blah
+Output:
+"blah blah blahing that heard it,
+There is a were to dell him to.
+
+KATHARINA:
+My heart piece you hate. Will, on Glo"
