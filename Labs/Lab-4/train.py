@@ -12,11 +12,13 @@ from generate import *
 
 from torch.utils.tensorboard import SummaryWriter
 
+writer = SummaryWriter()
+
 # Parse command line arguments
 argparser = argparse.ArgumentParser()
 argparser.add_argument('filename', type=str)
 argparser.add_argument('--model', type=str, default="gru")
-argparser.add_argument('--n_epochs', type=int, default=100)
+argparser.add_argument('--n_epochs', type=int, default=2000)
 argparser.add_argument('--print_every', type=int, default=100)
 argparser.add_argument('--hidden_size', type=int, default=100)
 argparser.add_argument('--n_layers', type=int, default=2)
@@ -59,11 +61,11 @@ def train(inp, target):
         output, hidden = decoder(inp[:,c], hidden)
         loss += criterion(output.view(args.batch_size, -1), target[:,c])
 
-    perplexity = torch.exp(loss.data / args.chunk_len)
-    print("PERPLEXIY:", perplexity)
-    print("LOSS: ", loss.data.item() / args.chunk_len)
-    writer.add_scalar("Perplexity", perplexity)
-    writer.add_scalar("Loss", loss)
+    #perplexity = torch.exp(loss.data / args.chunk_len)
+    #print("PERPLEXIY:", perplexity)
+    #print("LOSS: ", loss.data.item() / args.chunk_len)
+    #writer.add_scalar("Perplexity", perplexity, epoch)
+    #writer.add_scalar("Loss", loss, epoch)
     loss.backward()
     decoder_optimizer.step()
     
@@ -94,12 +96,13 @@ start = time.time()
 all_losses = []
 loss_avg = 0
 
-writer = SummaryWriter()
 try:
     print("Training for %d epochs..." % args.n_epochs)
     for epoch in tqdm(range(1, args.n_epochs + 1)):
         loss = train(*random_training_set(args.chunk_len, args.batch_size))
         loss_avg += loss
+
+        writer.add_scalar('RNN Perplexity', math.exp(loss), epoch)
 
         if epoch % args.print_every == 0:
             print('[%s (%d %d%%) %.4f]' % (time_since(start), epoch, epoch / args.n_epochs * 100, loss))
