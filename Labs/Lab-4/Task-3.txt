@@ -1,9 +1,13 @@
-The: "The man and newer with vile most love. What, forced, and she to bless thee.
+##Input: The
+Output: 
+"The man and newer with vile most love. What, forced, and she to bless thee.
 
 LEONTES:
 I cannot with the"
 
-What is: "What is 'twere in my father.
+##Input: What is
+Output: 
+"What is 'twere in my father.
 
 BRUTUS:
 My lord, thou not five vilitter than two.
@@ -11,9 +15,13 @@ My lord, thou not five vilitter than two.
 Servant:
 Loud beget shape,"
 
-Shall I give: "Shall I give you are I am:
+##Input: Shall I give
+Output: 
+"Shall I give you are I am:
 For madam, and so in the holy tassed
 But so than that point with countereds,
 To help"
 
-X087hNYB BHN BYFVuhsdbs: "X087hNYB BHN BYFVuhsdbstance on mine allable have been a father in the throne, as you have been in the bound of his graciou"
+##Input: X087hNYB BHN BYFVuhsdbs
+Output: 
+"X087hNYB BHN BYFVuhsdbstance on mine allable have been a father in the throne, as you have been in the bound of his graciou"

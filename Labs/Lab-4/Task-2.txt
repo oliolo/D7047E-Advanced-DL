@@ -1,10 +1,13 @@
-2 b3n: "2 b3n tell own and tell
+##Input: 2 b3n
+Output: "2 b3n tell own and tell
 How not gently the time intendone,
 The old with me: a made what I would be
 In mor"
 
-bg09Z: "bg09Ze set the law, say the most grace of the tribunes,
+##Input: bg09Z
+Output: "bg09Ze set the law, say the most grace of the tribunes,
 The arm in slains make the between streat:
 Then d"
 
-AjOr9: "AjOr9I for I have a me her ratury brains to flemts to hear to my grace, betend, of her, that you make her"
+##Input: AjOr9
+Output: "AjOr9I for I have a me her ratury brains to flemts to hear to my grace, betend, of her, that you make her"
