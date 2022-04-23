@@ -49,5 +49,11 @@ Trained network t-sne and then pca
 ![bb73cf2d-833a-4828-92a0-19813a8b2790](https://user-images.githubusercontent.com/47854778/164676084-59e1d147-9b42-4a78-9002-ff8735b9b766.png)
 
 
+Exercise 4
 
+Task-1:  The change in perplexity during training of CharRNN on 2000 epochs
+![Perplexity of 2000 epochs](https://user-images.githubusercontent.com/48216230/164911460-5e82081f-7698-4c9b-a60c-3d66e4f6b74c.png)
+
+Task-4:  The change in perplexity during training of WordRNN on 2000 epochs
+![Word-Perplexity of 2000 epochs](https://user-images.githubusercontent.com/48216230/164911464-c948f322-841b-4a45-b2fd-bb5d12bcd3e1.png)
 
