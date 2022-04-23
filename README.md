@@ -57,3 +57,4 @@ Task-1:  The change in perplexity during training of CharRNN on 2000 epochs
 Task-4:  The change in perplexity during training of WordRNN on 2000 epochs
 ![Word-Perplexity of 2000 epochs](https://user-images.githubusercontent.com/48216230/164911464-c948f322-841b-4a45-b2fd-bb5d12bcd3e1.png)
 
+Generated output sequences for tasks 2, 3 & 4 can be found in Labs/Lab-4/Results
