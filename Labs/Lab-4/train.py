@@ -10,11 +10,13 @@ from helper import *
 from model import *
 from generate import *
 
+from torch.utils.tensorboard import SummaryWriter
+
 # Parse command line arguments
 argparser = argparse.ArgumentParser()
 argparser.add_argument('filename', type=str)
 argparser.add_argument('--model', type=str, default="gru")
-argparser.add_argument('--n_epochs', type=int, default=2000)
+argparser.add_argument('--n_epochs', type=int, default=100)
 argparser.add_argument('--print_every', type=int, default=100)
 argparser.add_argument('--hidden_size', type=int, default=100)
 argparser.add_argument('--n_layers', type=int, default=2)
@@ -57,10 +59,16 @@ def train(inp, target):
         output, hidden = decoder(inp[:,c], hidden)
         loss += criterion(output.view(args.batch_size, -1), target[:,c])
 
+    perplexity = torch.exp(loss.data / args.chunk_len)
+    print("PERPLEXIY:", perplexity)
+    print("LOSS: ", loss.data.item() / args.chunk_len)
+    writer.add_scalar("Perplexity", perplexity)
+    writer.add_scalar("Loss", loss)
     loss.backward()
     decoder_optimizer.step()
-
-    return loss.data[0] / args.chunk_len
+    
+    #return loss.data[0] / args.chunk_len
+    return loss.data.item() / args.chunk_len
 
 def save():
     save_filename = os.path.splitext(os.path.basename(args.filename))[0] + '.pt'
@@ -86,6 +94,7 @@ start = time.time()
 all_losses = []
 loss_avg = 0
 
+writer = SummaryWriter()
 try:
     print("Training for %d epochs..." % args.n_epochs)
     for epoch in tqdm(range(1, args.n_epochs + 1)):
@@ -98,7 +107,8 @@ try:
 
     print("Saving...")
     save()
-
+    
 except KeyboardInterrupt:
     print("Saving before quit...")
     save()
+writer.close()
