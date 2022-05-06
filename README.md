@@ -58,3 +58,38 @@ Task-4:  The change in perplexity during training of WordRNN on 2000 epochs
 ![Word-Perplexity of 2000 epochs](https://user-images.githubusercontent.com/48216230/164911464-c948f322-841b-4a45-b2fd-bb5d12bcd3e1.png)
 
 Generated output sequences for tasks 2, 3 & 4 can be found in Labs/Lab-4/Results
+
+
+
+Exercise 5
+
+Task 1:
+
+Left: Original loss as described by Ian Goodfellow for 20k iterations 
+
+Right: Logistic loss as described in Brandon Amos blog for 20k iterations 
+
+![loss 20k - task 1 1](https://user-images.githubusercontent.com/48216230/167096897-e191cc05-909e-4a0a-88b6-5ed0d98379e4.png)
+![loss 20k - task 1 2](https://user-images.githubusercontent.com/48216230/167096914-5ba7d5f4-236e-4baa-9f47-82e77b4d238c.png)
+
+Left: Original loss as described by Ian Goodfellow for 100k iterations 
+
+Right: Logistic loss as described in Brandon Amos blog for 100k iterations
+
+![loss 100k - task 1 1](https://user-images.githubusercontent.com/48216230/167096928-310de170-e5fb-4369-bf01-8b172315fe52.png)
+![loss 100k - task 1 2](https://user-images.githubusercontent.com/48216230/167096947-5c311efe-598f-43b1-9eaf-0c75edb40d21.png)
+
+Task 2:
+Create adversarial images to classify 4s as 9s.
+ 
+![task 2 1 graf](https://user-images.githubusercontent.com/48216230/167096983-2db52f5f-09cc-40ac-af1d-abdf504c8242.png)
+![task 2 1 generated pic](https://user-images.githubusercontent.com/48216230/167096995-4067fedb-53d0-45da-8c0e-0807d60aad74.png)
+
+Use a random noise image to classify it as 9.
+
+![task 2 2 graf](https://user-images.githubusercontent.com/48216230/167097010-b2dc4568-74b1-47ce-ab0e-5caa542e4360.png)
+![task 2 2 generated pic](https://user-images.githubusercontent.com/48216230/167097018-fccec08e-2770-4264-b923-21fc07a0ff2b.png)
+
+Use a zero image (matrix with all values 0) and classify it as 9.
+
+![task 2 3 graf](https://user-images.githubusercontent.com/48216230/167097043-27c074a2-f925-49e0-b7a6-cf33f830d696.png)
