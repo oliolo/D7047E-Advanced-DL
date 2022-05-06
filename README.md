@@ -69,7 +69,7 @@ Left: Original loss as described by Ian Goodfellow for 20k iterations
 
 Right: Logistic loss as described in Brandon Amos blog for 20k iterations 
 
-![loss 20k - task 1 1](https://user-images.githubusercontent.com/48216230/167096897-e191cc05-909e-4a0a-88b6-5ed0d98379e4.png)
+![loss 20k - task 1 1 (1)](https://user-images.githubusercontent.com/48216230/167106465-bf7bb34c-8f77-4ad7-b7fc-1a1815b99707.png)
 ![loss 20k - task 1 2](https://user-images.githubusercontent.com/48216230/167096914-5ba7d5f4-236e-4baa-9f47-82e77b4d238c.png)
 
 Left: Original loss as described by Ian Goodfellow for 100k iterations 
@@ -79,11 +79,26 @@ Right: Logistic loss as described in Brandon Amos blog for 100k iterations
 ![loss 100k - task 1 1](https://user-images.githubusercontent.com/48216230/167096928-310de170-e5fb-4369-bf01-8b172315fe52.png)
 ![loss 100k - task 1 2](https://user-images.githubusercontent.com/48216230/167096947-5c311efe-598f-43b1-9eaf-0c75edb40d21.png)
 
+
+How/why is the output different for both the cases ? 
+
+- One difference that can be seen in the graphs are that in the original loss function we see higher highs and lower lows compared to the logistic loss.
+ 
+Try to find how the results can be improved.
+
+- Change the cost function for a better optimization goal.
+- Add additional penalties to the cost function to enforce constraints.
+- Avoid overconfidence and overfitting.
+- Better ways of optimizing the model.
+- Add labels.
+
+
 Task 2:
 Create adversarial images to classify 4s as 9s.
  
-![task 2 1 graf](https://user-images.githubusercontent.com/48216230/167096983-2db52f5f-09cc-40ac-af1d-abdf504c8242.png)
-![task 2 1 generated pic](https://user-images.githubusercontent.com/48216230/167096995-4067fedb-53d0-45da-8c0e-0807d60aad74.png)
+![task 2 1 graf](https://user-images.githubusercontent.com/48216230/167096983-2db52f5f-09cc-40ac-af1d-abdf504c8242.png),
+
+![task 2 1 generated pic](https://user-images.githubusercontent.com/48216230/167107233-b8cec489-5059-43ea-8a90-3b947e649068.png)
 
 Use a random noise image to classify it as 9.
 
